@@ -1,4 +1,4 @@
-@import url(https://coolors.co/171219-62a87c-805d93-f0b5b3-efcb68);
+@import url(https://coolors.co/171219-711ddf-805d93-f0b5b3-efcb68);
 body{
     font-family:var(--paragraph-font) ;
     max-width: 960px;
@@ -6,7 +6,7 @@ body{
 }
 :root{
     --primary-color: #171219; 
-    --secondary-color: #62a87c;
+    --secondary-color: #711ddf;
     --accent-color: #805d93;
     --additional-accent-color: #f0b5b3;
     --heading-font: 'Arial', sans-serif;
@@ -24,7 +24,7 @@ body{
 }
 h1,h2,h3,h4,h5,h6{
     font-family: var(--heading-font);
-    color: #62a87c;
+    color:#5abcd8 ;
 }
 header{
     padding: 20px;
