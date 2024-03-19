@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
+
+:root {
+  --font-color: #00010246; /* Font color */
+  --social-link-color: blue; /* Social link color */
+  --background-color-article: #ffffff; /* Background color of the article with opacity */
+  --hero-container-width: 80%; /* Width of the hero container */
+  --section-margin: 40px
+
+  /* Add more variables as needed */
+}
+section {
+  margin-top: var(--section-margin);
+}
+
+h2 {
+  margin-bottom: var(--section-margin);
+}
+
+img {
+  margin-bottom: var(--section-margin);
+}
+
+body {
+  max-width: 1000px; /* Limiting the entire width of the page */
+  margin: 0 auto;
+}
+
+header {
+  background-color: #ffffff; /* Example background color for the header */
+  padding: 20px;
+}
+
+header img {
+  max-width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--font-color);
+  margin-right: 20px;
+}
+
+.main {
+  position: relative;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--font-color); /* Font color */
+}
+
+.hero article {
+  position: absolute;
+  background-color: var(--background-color-article); /* Background color with opacity */
+  padding: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero article img {
+  float: right;
+  margin-left: 20px;
+}
+
+section {
+  margin-top: 40px;
+}
+
+h2 {
+  color: var(--font-color); /* Font color */
+}
+
+p {
+  color: var(--font-color); /* Font color */
+}
+
+footer {
+  background-color: #f4f4f4; /* Example background color for the footer */
+  padding: 20px;
+}
+
+footer .sociallinks {
+  margin-top: 20px;
+}
+
+footer .sociallinks a {
+  text-decoration: none;
+}
+
+footer .sociallinks img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  filter: grayscale(100%); /* Example removing underlines from social media links */
+}
