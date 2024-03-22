@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
 
 :root {
-  --font-color: #00010246; /* Font color */
+  --font-color: #097ef346; /* Font color */
   --social-link-color: blue; /* Social link color */
-  --background-color-article: #ffffff; /* Background color of the article with opacity */
+  --background-color-article: #f0eded; /* Background color of the article with opacity */
   --hero-container-width: 80%; /* Width of the hero container */
   --section-margin: 40px
 
@@ -22,7 +22,7 @@ img {
 }
 
 body {
-  max-width: 1000px; /* Limiting the entire width of the page */
+  max-width: 1200px; /* Limiting the entire width of the page */
   margin: 0 auto;
 }
 
