@@ -1,7 +1,4 @@
-/* Importing Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
 
-/* Define CSS variables */
 :root {
   --font-color: #097ef3; /* Font color */
   --background-color-article: rgba(240, 237, 237, 0.8); /* Background color of the article with opacity */
@@ -22,50 +19,6 @@ h1, h2, p {
 body {
   max-width: 1200px; /* Limiting the entire width of the page */
   margin: 0 auto;
-}
-
-/* Styling the Hero Container using Position Absolute */
-.hero {
-  position: relative;
-  overflow: hidden;
-}
-
-.hero img {
-  display: block;
-  width: 100%; /* Relative width */
-  height: auto;
-}
-
-.hero h1 {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%,0 );
-}
-
-.hero article {
-  position: absolute;
-  background-color: var(--background-color-article); /* Background color with opacity */
-  padding: 20px;
-  top: 50%;
-  left: 0;
-  transform: translate(0, -50%);
-  float: right;
-  width: 40%;
-  margin-right: 60px;
-}
-
-.hero article p {
-  margin: 0; /* Remove default margin */
-  padding: 15px; /* Add padding for better readability */
-  box-sizing: border-box; /* Include padding in width calculation */
-  text-align: justify; /* Justify text */
-}
-
-.hero article img {
-  float: right;
-  width: 50%; /* Adjust width to shift to the left */
-  margin: 0; /* Add margin to separate from text */
 }
 
 /* Styling the header */
