@@ -1,0 +1,201 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
+
+/* Define CSS variables */
+:root {
+  --font-color: #097ef3; /* Font color */
+  --background-color-article: rgba(240, 237, 237, 0.8); /* Background color of the article with opacity */
+  --section-margin: 40px; /* Margin for sections */
+}
+
+/* Styling headings and paragraph elements */
+h1, h2, p {
+  color: var(--font-color); /* Font color */
+}
+
+/* Removing underlines from social media links */
+.sociallinks a {
+  text-decoration: none;
+}
+
+/* Limiting the entire width of the page */
+body {
+  max-width: 1200px; /* Limiting the entire width of the page */
+  margin: 0 auto;
+}
+
+/* Styling the Hero Container using Position Absolute */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero img {
+  display: block;
+  width: 100%; /* Relative width */
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,0 );
+}
+
+.hero article {
+  position: absolute;
+  background-color: var(--background-color-article); /* Background color with opacity */
+  padding: 20px;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  float: right;
+  width: 40%;
+  margin-right: 60px;
+}
+
+.hero article p {
+  margin: 0; /* Remove default margin */
+  padding: 15px; /* Add padding for better readability */
+  box-sizing: border-box; /* Include padding in width calculation */
+  text-align: justify; /* Justify text */
+}
+
+.hero article img {
+  float: right;
+  width: 50%; /* Adjust width to shift to the left */
+  margin: 0; /* Add margin to separate from text */
+}
+
+/* Styling the header */
+header {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Logo takes auto width, nav takes remaining space */
+  align-items: center;
+  padding: 20px;
+}
+
+header img {
+  max-height: 100px; /* Adjust height as needed */
+}
+
+/* Styling the nav */
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav a {
+  margin-left: 20px;
+}
+
+/* Styling the History section */
+section#history {
+  margin-top: var(--section-margin);
+}
+
+/* Styling the Adventures section */
+section#adventures {
+  margin-top: var(--section-margin);
+}
+
+#adventures {
+  display: flex;
+  justify-content: space-between;
+}
+
+#adventures figure {
+  width: 50%; /* Adjust as needed */
+}
+
+#adventures img {
+  width: 50%;
+  height: auto;
+}
+
+#adventures figcaption {
+  text-align: center;
+}
+
+/* Styling the footer */
+footer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer p {
+  margin-right: auto; /* Pushes social links to the right */
+}
+
+footer .sociallinks img {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px; /* Adjust spacing between icons */
+}
+
+/* Additional styles for contact page */
+#company-info {
+  margin-top: var(--section-margin);
+}
+
+#employee-profiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: var(--section-margin);
+}
+
+.employee {
+  flex-basis: 30%;
+  margin-bottom: 20px;
+}
+
+.employee img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.employee p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: var(--section-margin);
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contact-form input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+#contact-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#contact-form button:hover {
+  background-color: #0056b3;
+}

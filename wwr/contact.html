@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - White Water Rafting</title>
+    <link rel="stylesheet" href="styles/rafting2.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Rapid adventures">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <section id="company-info">
+            <div class="container">
+                <h2>Company Information</h2>
+                <address>
+                    123 River Rd<br>
+                    Adventure City, CA 98765<br>
+                    Phone: 123-456-7890<br>
+                    Email: info@raftingadventures.com
+                </address>
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d229868.12811556234!2d-95.37884378938358!3d29.767905907138967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1711998454735!5m2!1sen!2ske" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="employee-profiles">
+            <div class="container">
+                <h2>Meet Our Team</h2>
+                <img src="images/employee1.webp" alt="Manager" width="150" height="150">
+                <p>Manager</p>
+                <img src="images/employee2.webp" alt="Lead Trainer" width="150" height="150">
+                <p>Lead Trainer</p>
+                <img src="images/employee3.webp" alt="Director" width="150" height="150">
+                <p>Director</p>
+            </div>
+        </section>
+
+        <section id="contact-form">
+            <div class="container">
+                <h2>Contact Form</h2>
+                <form action="submit.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <label>Purpose of Message:</label><br>
+                    <input type="radio" id="inquiry" name="purpose" value="General Inquiry" required>
+                    <label for="inquiry">General Inquiry</label><br>
+                    <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                    <label for="reservation">Reservation Question</label><br>
+                    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                    <label for="suggestion">Website Suggestion</label><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br>
+
+                    <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label><br>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Rapid Adventures  ⫻ Eugene Toseli</p>
+        <p><a href="https://drive.google.com/file/d/1na9D86K3g-RcO3vy7my1ZwSw93kaXiFm/view">Contact Us Wireframe</a></p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.jpeg" alt="Instagram">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
