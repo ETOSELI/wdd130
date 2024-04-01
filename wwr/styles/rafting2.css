@@ -1,27 +1,22 @@
-
 :root {
   --font-color: #097ef3; /* Font color */
   --background-color-article: rgba(240, 237, 237, 0.8); /* Background color of the article with opacity */
   --section-margin: 40px; /* Margin for sections */
 }
 
-/* Styling headings and paragraph elements */
 h1, h2, p {
   color: var(--font-color); /* Font color */
 }
 
-/* Removing underlines from social media links */
 .sociallinks a {
   text-decoration: none;
 }
 
-/* Limiting the entire width of the page */
 body {
   max-width: 1200px; /* Limiting the entire width of the page */
   margin: 0 auto;
 }
 
-/* Styling the header */
 header {
   display: grid;
   grid-template-columns: auto 1fr; /* Logo takes auto width, nav takes remaining space */
@@ -33,7 +28,6 @@ header img {
   max-height: 100px; /* Adjust height as needed */
 }
 
-/* Styling the nav */
 nav {
   display: flex;
   justify-content: flex-end;
@@ -43,35 +37,10 @@ nav a {
   margin-left: 20px;
 }
 
-/* Styling the History section */
 section#history {
   margin-top: var(--section-margin);
 }
 
-/* Styling the Adventures section */
-section#adventures {
-  margin-top: var(--section-margin);
-}
-
-#adventures {
-  display: flex;
-  justify-content: space-between;
-}
-
-#adventures figure {
-  width: 50%; /* Adjust as needed */
-}
-
-#adventures img {
-  width: 50%;
-  height: auto;
-}
-
-#adventures figcaption {
-  text-align: center;
-}
-
-/* Styling the footer */
 footer {
   margin-top: 40px;
   display: flex;
@@ -93,28 +62,6 @@ footer .sociallinks img {
   margin-top: var(--section-margin);
 }
 
-#employee-profiles {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: var(--section-margin);
-}
-
-.employee {
-  flex-basis: 30%;
-  margin-bottom: 20px;
-}
-
-.employee img {
-  max-width: 100%;
-  border-radius: 50%;
-}
-
-.employee p {
-  text-align: center;
-  margin-top: 10px;
-}
-
 #contact-form {
   max-width: 600px;
   margin: 0 auto;
@@ -126,8 +73,6 @@ footer .sociallinks img {
   margin-bottom: 5px;
 }
 
-#contact-form input[type="text"],
-#contact-form input[type="email"],
 #contact-form textarea {
   width: 100%;
   margin-bottom: 10px;
